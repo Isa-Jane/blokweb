@@ -1,0 +1,113 @@
+/* Typography imported from Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400');
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+p, a {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+nav{
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+}
+nav label,#hamburger {
+display: none;}
+
+a {
+text-decoration: none;
+
+text-align: center;
+font-size: 24px;
+display: block;
+text-align: center;}
+
+.logo {
+margin-right: auto;
+
+}
+.trucks {
+  padding: 2rem;
+}
+
+.trucks > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-gap: 1rem;
+}
+
+.trucks > ul > li {
+  border: 1px solid #E2E2E2;
+  border-radius: .5rem;
+}
+
+.trucks > ul > li > figure {
+  max-height: 220px;
+  overflow: hidden;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  position: relative;
+}
+
+.trucks > ul > li > figure > img {
+  width: 100%;
+}
+
+.trucks > ul > li > figure > figcaption {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0,0,0,.7);
+  width: 100%;
+}
+
+.trucks > ul > li > figure > figcaption > h3 {
+  color: white;
+  padding: .75rem;
+  font-size: 1.25rem;
+}
+
+.trucks > ul > li > p {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 1rem .75rem;
+  color: #666666;
+}
+
+.trucks > ul > li > a {
+  padding: .5rem 1rem;
+  margin: .5rem;
+  background-color:#800020;
+}
+.zoekbar {
+  position: fixed;
+ display: inline-block;
+ left: 50%;
+ transform: translate(-50%);
+ width: 95%;
+ max-width: 344px;
+ height: 48px;
+ background: #fff;
+ border-radius: 2px;
+ box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+ overflow: hidden;
+}
+input{
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+  width: 250px;
+  height: 40px;
+  left: 172px;
+  margin: 4px 0;
+  border: 0;
+  border-radius: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+footer {
+ 
+}
