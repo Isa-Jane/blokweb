@@ -17,6 +17,7 @@ nav label,#hamburger {
 display: none;
 }
 .logo {
+	padding-right: 5em;
 display: flex;
 justify-content: flex-start;
 font-size: 2em;
@@ -45,7 +46,7 @@ ul a:active{
 border-radius: 1.9rem;
 }
 .logo:hover {
-transform: rotateY(180deg);
+transform: rotate(360deg);
 }
 ul{
 margin-left: auto;
@@ -58,7 +59,6 @@ display: inline-block;
 }
 .start {
 background-image: url(fotos/foodkopie.jpg);
-
 background-size: cover;
 padding: 4rem 2rem;
 display: grid;
@@ -69,7 +69,6 @@ align-items: center;
 font-size: 4rem;
 padding-bottom: 1rem;
 color: white;
-
 }
 .start > article > p {
 font-size: 1.5rem;
@@ -77,15 +76,13 @@ font-weight: 200;
 color: white;
 }
 .start::before{
-
 }
 .vraag{
- 
 
 }
 .filter{
-max-height: 5vh; 
-  max-width: 5vw;
+max-height: 5vh;
+max-width: 5vw;
 }
 form {
 margin-left: -28.5em;
@@ -156,6 +153,27 @@ section > ul > li > a:hover {
 background-color:black;
 border-radius: .7rem;
 }
+footer{
+background-color:blue;
+}
+@media (prefers-color-scheme: dark) {
+body{
+background-color: #1e1e1e;
+color: #d8d8d8;
+}
+section > ul > li > p {
+color: white;
+}
+section > ul > li > a:hover {
+background-color:white;
+border-radius: .7rem;
+color: black;}
+section>ul>li {
+border: 1px solid white;
+}
+*{
+color: white;
+}
 @media screen and (max-width: 950px){
 nav label {
 display: inline-block;
@@ -189,25 +207,4 @@ h1{
 font-size: 2em;
 display: flex;
 justify-content: flex-start;
-}
-@media (prefers-color-scheme: dak) {
-body{
-background-color: #1e1e1e;
-color: #d8d8d8;
-}
-section > ul > li > p {
-color: white;
-}
-section > ul > li > a:hover {
-background-color:white;
-border-radius: .7rem;
-color: black;}
-section>ul>li {
-border: 1px solid white;
-}
-*{
-color: white;
-}
-footer{
-background-color:blue;
 }

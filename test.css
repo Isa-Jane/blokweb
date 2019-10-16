@@ -28,6 +28,50 @@ text-align: center;}
 margin-right: auto;
 
 }
+body {
+  height: 100vh;
+  padding: 0;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+.module {
+  width: 300px;
+  height: 300px;
+  display: grid;
+  place-items: center;
+  color: #ff43ea;
+  position: relative;
+}
+.module::before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url(https://images.unsplash.com/photo-1494645009625-cc17363a5f20?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=bd502af39c922553e5a13624d4f44f40);
+  background-size: cover;
+  filter: grayscale(100%);
+}
+.module-inside {
+  position: relative;
+  font: bold 42px sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .trucks {
   padding: 2rem;
 }
@@ -80,32 +124,31 @@ margin-right: auto;
   margin: .5rem;
   background-color:#800020;
 }
-.zoekbar {
-  position: fixed;
- display: inline-block;
- left: 50%;
- transform: translate(-50%);
- width: 95%;
- max-width: 344px;
- height: 48px;
+.filter{
+ max-height: 5vw;
+  max-width: 5vw;
+
+}
+form {
+ margin-left: -22.5em;
+ width: 100%;
+ max-width: 21.5em;
+ height: 5em;
  background: #fff;
  border-radius: 2px;
  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
- overflow: hidden;
-}
-input{
-  position: absolute;
-  left:50%;
-  transform: translateX(-50%);
-  width: 250px;
-  height: 40px;
-  left: 172px;
-  margin: 4px 0;
-  border: 0;
-  border-radius: 0;
-  box-sizing: border-box;
-  font-size: 16px;
-  font-weight: 400;
+ }
+ .showform{
+  margin-left: 0em;
+ width: 100%;
+ max-width: 21.5em;
+ height: 5em;
+ background: #fff;
+ border-radius: 2px;
+ box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+ }
+label{
+
 }
 
 footer {
