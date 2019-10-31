@@ -64,6 +64,7 @@ li{
 text-align: center;
 display: inline-block;
 }
+/* ik heb dit gebruikt hiervoor https://css-tricks.com/look-ma-no-media-queries-responsive-layouts-using-css-grid.*/
 .start {
 margin-top: 0em;
 background-image: url(fotos/foodkopie.jpg);
@@ -89,6 +90,7 @@ color: white;
 max-height: 5vh;
 max-width: 5vw;
 }
+/* ik heb de slides uit de les gebruikt om dit te maken*/
 main>section>form {
 margin-left: -28.5em;
 position: absolute;
@@ -151,6 +153,7 @@ height: 100%;
 border:none;
 border-bottom-right-radius: 0.5em;
 }
+/* ik heb dit gebruikt hiervoor https://css-tricks.com/look-ma-no-media-queries-responsive-layouts-using-css-grid.*/
 section {
 margin-top: 2em;
 padding: 2em;
@@ -211,22 +214,30 @@ footer{
 	color: white;
 	min-height: 15vw;
 	display: flex;
+	flex-direction: column;
+	align-content: center;
 	justify-content: center;
 }
 footer p {
-	max-width: 15vw;
+	margin-top: 1em;
+	background-color: black;
+	text-align: center;
 }
 footer fieldset{
-	display: flex;
-	flex-direction: column;
+	
 	justify-content: center;
+
 	min-width: 20em;
+	background-color: white;
+
 }
 footer form {
+	margin-left: 35vw;
 margin-top: 2em;
 	background:white;
 	color:black;
-min-width: 30vw;
+	min-width: 20em;
+max-width: 30vw;
 display: flex;
 	justify-content: center;
 	border-radius: 0.2em;
@@ -240,12 +251,21 @@ footer input:valid{
 }
 footer button {
 margin-top: 1em;
+margin-bottom: 1em;
+margin-left: 1em;
 color: white;
 background-color: black;
-width: 4em;
+width: 4.5em;
 height: 2em;
 border:none;
+padding-left: 0.2em;
+padding-right: 0.2em;
 
+}
+footer button:focus {
+border-color: blue;
+outline: none;
+background-color: blue;
 }
 footer form fieldset{
 	display: flex;
@@ -253,35 +273,17 @@ footer form fieldset{
 }	
 footer legend{
 padding-top: 0.5em;
-padding-bottom: 1em;
-/*
-footer{
-background-color: : red;
-color: black;
-min-height: 10vw;
-}
-footer>form>fieldset{
-	display: flex;
-	flex-direction: column;
-border: 1px;
-}
-footer>form{
-color: black;
-margin: 0 auto;
-width: 20vw;
-margin-top: 2em;
-}
-footer>form>fieldset>legend>button{
-height: 2em;
-width: 5em;
-margin-top: 1em;
-}
-*/
+padding-bottom: 0.5em;}
+
 footer label{
 	margin-top: 1em;
+	margin-left: 1em;
+
 }
 footer input{
+margin-left: 1em;
 	transition: .1s;
+	max-width: 25em;
 }
 
 footer input:focus {
@@ -289,6 +291,7 @@ border-color: blue;
 outline: none;
 background: lightblue;
 }
+/*https://code-boxx.com/simple-responsive-pure-css-hamburger-menu */
 @media screen and (max-width: 950px){
 nav label {
 display: inline-block;
@@ -323,9 +326,44 @@ font-size: 2em;
 display: flex;
 justify-content: flex-start;
 }
-@media screen and (prefers-color-scheme: dak) {
-  body {
-    background-color: black;
-    color:white;
-  }
+}
+/* ik wilde een darkmode toevoegen, dit heb ik gedaan door hulp van;https://css-tricks.com/dark-modes-with-css/*/
+@media (prefers-color-scheme: dark) {
+	body{
+		background-color: #121212;
+		color: white;
+	}
+section > ul > li > p {
+   color: white;}
+/* ik wilde deze foto wit maken, dit heb ik gedaan door behulp van een filter, zie https://teamtreehouse.com/community/is-it-possible-to-make-a-black-icon-white-using-css*/
+
+.filter {
+ -webkit-filter: invert(100%); 
+}
+.showform button{
+
+color: black;
+background-color: white;
+
+}
+.showform {background-color: #05386B;
+}
+
+main>section>form button{
+
+color: black;
+background-color: white;
+
+}
+header{
+background-color: #05386B;
+}
+section > ul > li > a{
+	background-color: #05386B;
+}
+footer{
+	background-color: #05386B;}
+
+
+}
 }
