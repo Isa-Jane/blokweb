@@ -1,0 +1,331 @@
+*{
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+header{
+background-color: #a70000;
+}
+body {
+font-family: 'Roboto', sans-serif;
+}
+nav {
+text-decoration: none;
+padding: 1rem 2rem;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+nav label,#hamburger {
+display: none;
+}
+.logo {
+padding-right: 5em;
+display: flex;
+justify-content: flex-start;
+font-size: 2em;
+font-family: 'Nunito', sans-serif;
+padding: 10px 20px;
+text-decoration: none;
+text-shadow: 0.05em 0.05em black,
+0.07em 0.07em black,
+.12em 0.12em black;
+}
+a {
+text-decoration: none;
+padding: 1rem 2rem;
+color: white;
+text-align: center;
+font-size: 1.5em;
+display: flex;
+http://rollendekeukens.amsterdam/text-align: center;
+transition: .3s;
+}
+ul a:hover {
+background-color:rgba(0,0,0,.7);
+border-radius: .7rem;
+}
+ul a:active{
+border-radius: 1.9rem;
+}
+ul a:focus{
+color: blue;
+outline:none;
+}
+.logo:hover {
+transform: rotate(360deg);
+}
+ul{
+margin-left: auto;
+text-decoration: none;
+list-style: none;
+}
+li{
+text-align: center;
+display: inline-block;
+}
+.start {
+margin-top: 0em;
+background-image: url(fotos/foodkopie.jpg);
+background-size: cover;
+padding: 4rem 2rem;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+align-items: center;
+}
+.start > h1 {
+font-size: 4rem;
+padding-bottom: 1rem;
+color: white;
+}
+.start > article > p {
+font-size: 1.5rem;
+font-weight: 200;
+color: white;
+}
+.vraag{
+}
+.filter{
+max-height: 5vh;
+max-width: 5vw;
+}
+main>section>form {
+margin-left: -28.5em;
+position: absolute;
+max-height: 3em;
+height: 5em;
+background-color:#a70000;
+margin-top: 1em;
+position: absolute;
+margin-bottom:2em;
+border-radius: 0.5em;
+text-align: center;
+transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+color: white;
+}
+main>section>form label{
+	padding-left: 1em;
+	padding-right: 0.5em;
+border-radius: 0.2em;
+}
+ main>section>form input{
+	padding-right: 0.5em
+}
+main>section>form button{
+border-top-right-radius: 0.5em;
+color: white;
+background-color: black;
+width: 4em;
+height: 100%;
+border:none;
+border-bottom-right-radius: 0.5em;
+}
+.showform{
+margin-left: 0em;
+color: white;
+max-height: 3em;
+height: 5em;
+background-color:#a70000;
+margin-top: 1em;
+position: absolute;
+margin-bottom:2em;
+border-radius: 0.5em;
+text-align: center;
+}
+
+
+.showform label{
+	padding-left: 1em;
+	padding-right: 0.5em;
+border-radius: 0.2em;
+}
+.showform input{
+	padding-right: 0.5em
+}
+.showform button{
+border-top-right-radius: 0.5em;
+color: white;
+background-color: black;
+width: 4em;
+height: 100%;
+border:none;
+border-bottom-right-radius: 0.5em;
+}
+section {
+margin-top: 2em;
+padding: 2em;
+}
+section > ul {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+grid-gap: 1em;
+}
+section > ul > li {
+border: 1px solid black;
+border-radius: .5rem;
+}
+section > ul > li > figure {
+max-height: 13.75em;
+overflow: hidden;
+border-top-left-radius: .5rem;
+border-top-right-radius: .5rem;
+position: relative;
+}
+section > ul > li > figure > img {
+width: 100%;
+}
+section > ul > li:hover> figure > img{
+filter: grayscale(100%);}
+section > ul > li > figure > figcaption {
+position: absolute;
+bottom: 0;
+background-color: rgba(0,0,0,.7);
+width: 100%;
+}
+section > ul > li > figure > figcaption > h3 {
+color: white;
+padding: .75rem;
+font-size: 1.25rem;
+}
+section > ul > li > p {
+font-size: 1rem;
+line-height: 1.5;
+padding: 1rem .75rem;
+color: black;
+}
+section > ul > li > a {
+padding: .5rem 1rem;
+margin: .5rem;
+background-color:#a70000;
+border-radius: .5rem;
+display: flex;
+justify-content: center;
+}
+section > ul > li > a:hover {
+background-color:black;
+border-radius: .7rem;
+}
+
+footer{
+	background: #a70000;
+	color: white;
+	min-height: 15vw;
+	display: flex;
+	justify-content: center;
+}
+footer p {
+	max-width: 15vw;
+}
+footer fieldset{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-width: 20em;
+}
+footer form {
+margin-top: 2em;
+	background:white;
+	color:black;
+min-width: 30vw;
+display: flex;
+	justify-content: center;
+	border-radius: 0.2em;
+}
+footer input:invalid{
+	background:pink;
+}
+
+footer input:valid{
+	background: lightgreen;
+}
+footer button {
+margin-top: 1em;
+color: white;
+background-color: black;
+width: 4em;
+height: 2em;
+border:none;
+
+}
+footer form fieldset{
+	display: flex;
+	flex-direction: column;
+}	
+footer legend{
+padding-top: 0.5em;
+padding-bottom: 1em;
+/*
+footer{
+background-color: : red;
+color: black;
+min-height: 10vw;
+}
+footer>form>fieldset{
+	display: flex;
+	flex-direction: column;
+border: 1px;
+}
+footer>form{
+color: black;
+margin: 0 auto;
+width: 20vw;
+margin-top: 2em;
+}
+footer>form>fieldset>legend>button{
+height: 2em;
+width: 5em;
+margin-top: 1em;
+}
+*/
+footer label{
+	margin-top: 1em;
+}
+footer input{
+	transition: .1s;
+}
+
+footer input:focus {
+border-color: blue;
+outline: none;
+background: lightblue;
+}
+@media screen and (max-width: 950px){
+nav label {
+display: inline-block;
+color: #fff;
+font-style: normal;
+font-size: 1.6em;
+padding: 0.6em;
+}
+header{
+position: sticky;
+top: 0;
+left: 0;
+z-index: 1;
+}
+ul{
+width: 100%;
+}
+nav ul li {
+display: block;
+}
+nav ul li {
+border-top: 0.1em solid #fff;
+}
+nav ul {
+display: none;
+}
+nav input:checked ~ ul {
+display: block;
+}
+h1{
+font-size: 2em;
+display: flex;
+justify-content: flex-start;
+}
+@media screen and (prefers-color-scheme: dak) {
+  body {
+    background-color: black;
+    color:white;
+  }
+}
